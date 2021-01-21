@@ -6,9 +6,13 @@ This repository contains a collection of data structures notes and examples writ
 
 The notes are written based on [Introduction to ALgorithms, 3rd](https://mitpress.mit.edu/books/introduction-algorithms-third-edition).
 
-Examples are taken from [Leetcode](https://leetcode.com/) or [Introduction to Algorithms, 3rd](https://mitpress.mit.edu/books/introduction-algorithms-third-edition).
+Example problems are taken from either [Leetcode](https://leetcode.com/) or [Introduction to Algorithms, 3rd](https://mitpress.mit.edu/books/introduction-algorithms-third-edition).
 
-Codes are written by myself. Images are created by myself. 
+All codes are written by myself. Images are created by myself. 
+
+This repository is great for those who are learning data structure fors the first time and those who want to review data structures for an interview. 
+
+Please do not hesitate to use it if it is helpful to you. 
 
 Pobody's nerfect. Free free to let me know how I can improve the notebooks ;)
 
