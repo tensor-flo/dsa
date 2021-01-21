@@ -10,6 +10,8 @@ Examples are taken from [Leetcode](https://leetcode.com/) or [Introduction to Al
 
 Codes are written by myself. Images are created by myself. 
 
+Pobody's nerfect. Free free to let me know how I can improve the notebooks ;)
+
 ## Dependencies 
 
 ### Jupyter Themes 
