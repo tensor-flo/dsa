@@ -2,43 +2,50 @@
 
 ## Introduction 
 
-This repository contains a collection of data structures notes and examples written in Python3.   
+This repository contains a collection of Jupyter Notebooks on data structures and algorithms in Python 3.   
 
-The notes are written based on [Introduction to ALgorithms, 3rd](https://mitpress.mit.edu/books/introduction-algorithms-third-edition).
+The notes are written based on [Introduction to Algorithms, 3rd](https://mitpress.mit.edu/books/introduction-algorithms-third-edition).
 
 Example problems are taken from either [Leetcode](https://leetcode.com/) or [Introduction to Algorithms, 3rd](https://mitpress.mit.edu/books/introduction-algorithms-third-edition).
 
-All codes are written by myself. Images are created by myself. 
+This repository is great for those who are learning data structures for the first time and those who want to review data structures or those who want to learn data structures in Python3. 
 
-This repository is great for those who are learning data structure fors the first time and those who want to review data structures for an interview. 
+All content is created by myself. However, pobody's nerfect. Feel free to point out any mistakes or suggest any improvements ;)
 
-Please do not hesitate to use it if it is helpful to you. 
+## Contents
 
-Pobody's nerfect. Free free to let me know how I can improve the notebooks ;)
+TBD.
 
-## Dependencies 
+## Dependencies
+
+Python 3.8.5
+
+Anaconda 4.9.2 
+
+## Jupyter Notebook Settings 
+
+The basic Jupyter Notebook is neither efficient nor easy on the eyes. Below are what I do to improve both. 
 
 ### Jupyter Themes 
-My favorite Jupyter Notebook theme is Monokai from [jupyterthemes](https://github.com/dunovank/jupyter-themes):
+My favorite Jupyter Notebook theme is from [jupyterthemes](https://github.com/dunovank/jupyter-themes):
 
-Step 1: install jupyterthemes using 
+Step 1: install jupyterthemes 
 
 ``pip install jupyterthemes``
 
-Step 2: select the following settings 
+Step 2: select the theme and various fonts for codes, texts, and notebooks. 
 
 ``jt -t monokai -f ubuntu -nf ptsans -tf exosans -T -N``
 
 ### Jupyter Notebook Extensions 
 
-In order for you to see what I see, I strongly recommend installing [``jupyter_contrib_nbextensions``](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/index.html) 
-and enable the following nbextensions:
+Since the notebooks are relatively long, I strongly recommend installing [jupyter_contrib_nbextensions](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/index.html) 
+and enabling the following nbextensions:
 
 - Table of Contents (2)
 - Collapsible Headings
 - Equation Auto Numbering 
 - Codefolding 
-
 
 
 
