@@ -27,7 +27,7 @@ Anaconda 4.9.2
 The basic Jupyter Notebook is neither efficient nor easy on the eyes. Below are what I do to improve both. 
 
 ### Jupyter Themes 
-My favorite Jupyter Notebook theme is from [jupyterthemes](https://github.com/dunovank/jupyter-themes):
+My favorite Jupyter Notebook theme is monokai from [jupyterthemes](https://github.com/dunovank/jupyter-themes):
 
 Step 1: install jupyterthemes 
 

@@ -1,0 +1,146 @@
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry} 
+\usepackage[square]{natbib}
+\bibliographystyle{abbrvnat}
+
+\usepackage[nottoc]{tocbibind}
+\usepackage{amsmath, amsthm, amssymb, graphicx, tikz, hyperref, ifthen, xspace, bm, ulem}
+\usepackage{fancyhdr}
+%\addto\captionsenglish{\renewcommand{\chaptername}{Lecture}} % change Chapter to Lecture
+
+% codes 
+\usepackage{minted} % actual codes
+\usepackage[ruled, algosection, vlined]{algorithm2e} % pseudo codes
+
+
+% hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\usepackage[nameinlink,noabbrev]{cleveref}
+\newcommand*{\fullref}[1]{\hyperref[{#1}]{\Cref*{#1} -- \nameref*{#1}}}
+
+\parindent0pt
+
+% itemization
+\usepackage{enumerate}
+\renewcommand{\labelitemii}{$\diamond$}
+\renewcommand{\labelitemi}{$\triangleright$}
+\renewcommand{\labelitemiii}{$\circ$}
+\renewcommand{\labelitemiv}{$\ast$}
+
+
+% definitions, theorems, lemmas, etc
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{example}[thm]{Example}
+\newtheorem{ass}{Assumption}
+
+\theoremstyle{remark}
+\newtheorem*{claim}{Claim} 
+\newtheorem{rem}{Remark}[section]
+
+% Multiline comments
+\newcommand{\comment}[1]{}
+
+% Number sets
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}	
+\newcommand{\C}{\mathbb{C}}
+
+% Mathcal
+\newcommand{\cx}{\mathcal{X}}
+\newcommand{\cf}{\mathcal{F}}
+
+% Analysis
+\newcommand{\set}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\where}{\ \middle\vert\;}
+\newcommand{\abs}[1]{\left\vert #1 \right\vert}
+\newcommand{\norm}[2][]{{\left\Vert #2 \right\Vert}_{#1}}
+
+%\let + \newname + \old name to rename command
+%\renewcommand{•}{•} overrides predefined commands
+\let\dbar\d \renewcommand{\d}{\mathrm{d}}
+\newcommand{\D}{\,\mathrm{d}}
+\newcommand{\deriv}[2]{\frac{\d #1}{\d #2}}
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\DeclareMathOperator*{\argmaxRM}{arg\,max}
+\DeclareMathOperator*{\argminRM}{arg\,min}
+\newcommand{\seq}[2][n]{(#2_{#1})_{#1 \geq 0}}
+\newcommand{\e}{\mathrm{e}}
+
+% Piecewise defined function
+\newcommand{\funcdef}[1]{\left\lbrace \hspace{-1.2mm}
+	\setlength{\arraycolsep}{3mm} \begin{array}{ll} #1 \end{array}
+	\setlength{\arraycolsep}{0mm} \hspace{-1.8mm} \right.}
+
+% Linear Algebra
+\newcommand{\vect}[1]{\bm{#1}}
+\newcommand{\matr}[1]{\bm{#1}} 
+\newcommand{\tr}[1]{#1^{\top}}
+\renewcommand{\sp}[2]{#1^{\top}#2}   %scalar product
+\newcommand{\xmatrix}[1]{\!\left(\:\begin{matrix} #1 \end{matrix}\:\right)\!}	
+\newcommand{\mpsi}[1]{(#1^{\top}#1)^{-1}#1^{\top}}
+\newcommand{\grad}[1]{\mathrm{grad}(#1)}
+\newcommand{\curl}[1]{\mathrm{curl}(#1)}
+\newcommand{\Div}[1]{\mathrm{div}(#1)}
+\newcommand{\sign}[1]{\mathrm{sign}(#1)}
+\newcommand{\rank}[1]{\mathrm{rank}(#1)}
+
+% Indicator function
+\newcommand{\one}{1}
+\newcommand{\indicator}[1]{\one_{\left\lbrace #1\right\rbrace}}
+\DeclareRobustCommand\1{\futurelet\oneNext\oneCheck}%
+\def\oneCheck{%
+	\ifx\bgroup\oneNext \expandafter\indicator%
+	\else%
+	\expandafter\one%
+	\fi%
+}
+
+
+% Probability
+\renewcommand{\P}[1]{\mathbb{P}\left(#1\right)}
+\newcommand{\E}[1]{\mathbb{E}#1}
+\newcommand{\EXP}[2][]{\mathbb{E}_{{#1}}\left[#2\right]}
+\newcommand{\given}{\;\!\middle\vert\,}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\filt}{\mathbb{F}}
+\newcommand{\cpm}[1]{{#1}^c}
+\newcommand{\cov}[1]{\text{cov}{(#1)}}
+\newcommand{\kur}[1]{\text{kur}{(#1)}}
+\newcommand{\var}[1]{\text{Var}{\left(#1\right)}}
+\newcommand{\corr}[1]{\rho{(#1)}}
+\newcommand{\freq}[1]{\text{freq}\left(#1\right)}
+
+% Probability Distributions
+\newcommand{\dber}[1]{\mathrm{Bern}(#1)} %Bernoulli distribution
+\newcommand{\dbeta}[1]{\mathrm{Beta}(#1)} %Beta distribution
+\newcommand{\dbin}[1]{\mathrm{Bin}(#1)} %Binomial distribution 
+\newcommand{\ddir}[1]{\mathrm{Dir}(#1)} %Dirichlet distribution
+\newcommand{\dgamma}[1]{\mathrm{Gam}(#1)} %Gamma distribution
+\newcommand{\dnorm}[1]{\mathcal{N}(#1)} %Normal/Gaussian distribution
+\newcommand{\dst}[1]{\mathrm{St}(#1)} %Student t distribution
+\newcommand{\duni}[1]{\mathrm{U}(#1)} %Uniform distribution
+\newcommand{\dWis}[1]{\mathcal{W}(#1)} %Wishart distribution
+
+
+% Abbreviations
+\newcommand{\wrt}{with respect to\xspace}
+\newcommand{\ie}{i.e.}
+\newcommand{\Ps}{\mathbb{P}}
+\newcommand{\iid}{i.i.d }
+\newcommand{\soln}{\textit{Solution}.}
