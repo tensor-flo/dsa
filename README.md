@@ -2,7 +2,7 @@
 
 ## Introduction 
 
-This repository contains a collection of Jupyter Notebooks on data structures and algorithms in Python 3.   
+This repository contains a collection of Jupyter Notebooks on data structures and algorithms in Python3.   
 
 The notes are written based on [Introduction to Algorithms, 3rd](https://mitpress.mit.edu/books/introduction-algorithms-third-edition).
 
@@ -11,6 +11,13 @@ Example problems are taken from either [Leetcode](https://leetcode.com/) or [Int
 This repository is great for those who are learning data structures for the first time and those who want to review data structures or those who want to learn data structures in Python3. 
 
 All content is created by myself. However, pobody's nerfect. Feel free to point out any mistakes or suggest any improvements ;)
+
+### Texts 
+
+- [Introduction to Algorithms, 3rd edition](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
+
+- [Introduction to the Analysis of Algorithms, 2nd edition](https://aofa.cs.princeton.edu/home/)
+
 
 ## Contents
 
